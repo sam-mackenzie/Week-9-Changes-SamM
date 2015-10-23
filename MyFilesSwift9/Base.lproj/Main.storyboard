@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFilesSwift9" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGx-kL-c7B">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="MyFiles" id="Mjq-iV-Kbp"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKh-EY-EcC">
+                                <rect key="frame" x="265" y="94" width="71" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Local PDF">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dUw-IW-KZs" kind="presentation" id="gWY-nV-hSZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiL-xX-kXO">
+                                <rect key="frame" x="255" y="126" width="90" height="30"/>
+                                <animations/>
+                                <state key="normal" title="External PDF">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hBh-yS-k9D" kind="presentation" id="Gnz-ya-Igl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpS-oV-456">
+                                <rect key="frame" x="255" y="202" width="90" height="30"/>
+                                <state key="normal" title="Book PDF">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xGi-zT-5kn" kind="presentation" id="4Tq-g4-RqE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m09-sb-W1K">
+                                <rect key="frame" x="255" y="240" width="90" height="30"/>
+                                <state key="normal" title="About PDF">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="STN-z0-e00" kind="presentation" id="2hf-w3-gSF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvI-yt-qmb">
+                                <rect key="frame" x="255" y="164" width="90" height="30"/>
+                                <state key="normal" title="Movie PDF">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0vs-fp-O1o" kind="presentation" id="93f-pN-7tB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jGx-kL-c7B" secondAttribute="trailing" id="0LO-Vx-GVf"/>
+                            <constraint firstItem="jGx-kL-c7B" firstAttribute="centerX" secondItem="bKh-EY-EcC" secondAttribute="centerX" id="2Kv-AL-rbL"/>
+                            <constraint firstItem="bKh-EY-EcC" firstAttribute="centerX" secondItem="YiL-xX-kXO" secondAttribute="centerX" id="6bs-Bj-haR"/>
+                            <constraint firstItem="jGx-kL-c7B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6qt-H9-4Og"/>
+                            <constraint firstItem="bKh-EY-EcC" firstAttribute="top" secondItem="jGx-kL-c7B" secondAttribute="bottom" constant="30" id="N84-O4-GvJ"/>
+                            <constraint firstItem="jGx-kL-c7B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QLT-rf-C6N"/>
+                            <constraint firstItem="YiL-xX-kXO" firstAttribute="top" secondItem="bKh-EY-EcC" secondAttribute="bottom" constant="2" id="qck-vQ-hsD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59" y="241"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GaF-ou-xZH">
+            <objects>
+                <viewController id="xGi-zT-5kn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="45A-KW-vho"/>
+                        <viewControllerLayoutGuide type="bottom" id="ltv-My-YVn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GUc-nM-sYp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FMa-Dt-9OL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="svC-Dr-5I6">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Book PDF" id="XN6-1S-fii">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="Sjy-HB-WdB"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="unA-xZ-ExW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1611" y="867"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kZn-if-Ho5">
+            <objects>
+                <viewController id="STN-z0-e00" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Wg-FA-sJl"/>
+                        <viewControllerLayoutGuide type="bottom" id="9XH-pM-xxw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tLz-qj-tYO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oKF-2H-YF5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZZO-uA-OKc">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="About PDF" id="acX-6J-emf">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="M4z-yr-h9g"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R8N-kr-umE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-636" y="1194"/>
+        </scene>
+        <!--Load External View Controller-->
+        <scene sceneID="klt-et-Dfe">
+            <objects>
+                <viewController id="hBh-yS-k9D" customClass="LoadExternalViewController" customModule="MyFilesSwift9" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a2e-Fh-bsg"/>
+                        <viewControllerLayoutGuide type="bottom" id="r1x-2F-sIP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oVO-gs-3FZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91m-lm-FpZ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="My External PDF" id="rl2-LI-7gf">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="4Li-0a-CDP">
+                                            <connections>
+                                                <action selector="btnBack:" destination="hBh-yS-k9D" id="BoN-CF-Mt8"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZo-Bo-IkA">
+                                <rect key="frame" x="0.0" y="64" width="611" height="536"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="91m-lm-FpZ" secondAttribute="trailing" id="74G-DI-Jtq"/>
+                            <constraint firstItem="91m-lm-FpZ" firstAttribute="top" secondItem="a2e-Fh-bsg" secondAttribute="bottom" id="CZc-9h-AtP"/>
+                            <constraint firstItem="cZo-Bo-IkA" firstAttribute="leading" secondItem="oVO-gs-3FZ" secondAttribute="leading" id="N2n-QT-3VP"/>
+                            <constraint firstItem="cZo-Bo-IkA" firstAttribute="bottom" secondItem="r1x-2F-sIP" secondAttribute="top" id="evX-lS-FEg"/>
+                            <constraint firstItem="cZo-Bo-IkA" firstAttribute="top" secondItem="91m-lm-FpZ" secondAttribute="bottom" id="fLx-1o-z3H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cZo-Bo-IkA" secondAttribute="trailing" constant="-27" id="fPL-qx-EOw"/>
+                            <constraint firstItem="cZo-Bo-IkA" firstAttribute="leading" secondItem="91m-lm-FpZ" secondAttribute="leading" id="vMs-7d-yjb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="cZo-Bo-IkA" id="HX1-JA-qR4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="smo-HD-yrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="1134"/>
+        </scene>
+        <!--LocalPDF View Controller-->
+        <scene sceneID="KQh-V1-H6w">
+            <objects>
+                <viewController id="dUw-IW-KZs" customClass="LocalPDFViewController" customModule="MyFilesSwift9" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ALo-yo-jvf"/>
+                        <viewControllerLayoutGuide type="bottom" id="23U-rn-Tkj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wBu-v7-zkV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zxl-QA-8Yd">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="MyFilesFav" id="xTt-2c-5Ka">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="3bG-Hd-frS">
+                                            <connections>
+                                                <action selector="btnBack:" destination="dUw-IW-KZs" id="DFK-Y4-SZv"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jug-67-Pe9">
+                                <rect key="frame" x="-2" y="64" width="605" height="536"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Zxl-QA-8Yd" secondAttribute="trailing" id="L3Z-Ad-52A"/>
+                            <constraint firstItem="Zxl-QA-8Yd" firstAttribute="leading" secondItem="Jug-67-Pe9" secondAttribute="leading" id="MvW-rO-IAC"/>
+                            <constraint firstItem="Zxl-QA-8Yd" firstAttribute="leading" secondItem="wBu-v7-zkV" secondAttribute="leading" id="Tny-p6-wfu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jug-67-Pe9" secondAttribute="trailing" constant="-21" id="dD6-7B-VK4"/>
+                            <constraint firstItem="Jug-67-Pe9" firstAttribute="bottom" secondItem="23U-rn-Tkj" secondAttribute="top" id="gAj-Kz-hop"/>
+                            <constraint firstItem="Jug-67-Pe9" firstAttribute="top" secondItem="Zxl-QA-8Yd" secondAttribute="bottom" id="mLU-xM-6SI"/>
+                            <constraint firstItem="Zxl-QA-8Yd" firstAttribute="top" secondItem="ALo-yo-jvf" secondAttribute="bottom" id="sOc-Zf-zpM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="Jug-67-Pe9" id="MZg-Ke-16R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAF-Ca-poz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="241"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="1hm-TW-cSl">
+            <objects>
+                <viewController id="0vs-fp-O1o" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RsT-n2-fXb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ich-pV-3pU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Woj-UY-SU6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JYe-5m-0lk">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Movie PDF" id="1zB-tj-2U9">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="J58-Ax-s9c"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Do-Ni-wWO">
+                                <rect key="frame" x="5" y="88" width="600" height="512"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Do-Ni-wWO" firstAttribute="width" secondItem="Woj-UY-SU6" secondAttribute="width" id="zkJ-aw-1p7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="BJA-kF-GBh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOH-3l-vgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856" y="1057"/>
+        </scene>
+    </scenes>
+</document>
